@@ -1,0 +1,64 @@
+$main-color: #fba618;
+$second-color: #85b826;
+$third-color: #ffe1b6;
+html,
+body {
+  font-family: 'Amiri', serif;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-family: 'Merriweather', serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+
+  direction: rtl;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  background-image: url(../img/header.png);
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .overlay {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  .logo {
+    z-index: 10;
+    .navbar-brand {
+      img {
+        width: 50vh;
+      }
+    }
+  }
+}
+
+.title-list {
+  background-color: $main-color;
+  color: white;
+  border-radius: 10px;
+}
+.item {
+  background-color: $third-color;
+  padding: 8px 0px;
+  margin: 0px;
+  .title-name {
+    margin: 0px;
+  }
+  .price {
+    margin: 0px;
+    font-weight: 500;
+  }
+}

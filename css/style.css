@@ -1,0 +1,60 @@
+html,
+body {
+  font-family: "Amiri", serif;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-family: "Merriweather", serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../img/header.png);
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header .overlay {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+header .logo {
+  z-index: 10;
+}
+header .logo .navbar-brand img {
+  width: 50vh;
+}
+
+.title-list {
+  background-color: #fba618;
+  color: white;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: #ffe1b6;
+  padding: 8px 0px;
+  margin: 0px;
+}
+.item .title-name {
+  margin: 0px;
+}
+.item .price {
+  margin: 0px;
+  font-weight: 500;
+}
