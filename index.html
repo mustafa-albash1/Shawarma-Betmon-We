@@ -1,608 +1,810 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="img/png" href="img/icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="img/png" href="img/icon.png" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.rtl.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>شاورما بتمون - قائمة الأسعار</title>
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>شاورما بتمون - قائمة الأسعار</title>
-</head>
-
-<body>
-  <header class="contianer mb-5">
-    <div class="overlay"></div>
-    <div class="text-center py-4 logo position-relative d-flex justify-content-center align-items-center h-100">
-      <a class="navbar-brand" href="#">
-        <img class="" src="img/logo.png" alt="logo" />
-      </a>
-    </div>
-  </header>
-  <h1 class="h1 text-center pt-5 pb-4">قائمة الاسعار</h1>
-  <section class="menu overflow-hidden">
-    <div class="d-flex justify-content-center">
-      <div class="btn-group btn-group-justified flex-wrap">
-        <a href="#snack" class="btn btn-light">سناكات</a>
-        <a href="#mealSnacks" class="btn btn-light">سناكات وجبات</a>
-        <a href="#boxSnacks" class="btn btn-light">سناكات بوكس</a>
-        <a href="#potatoSandwichesAppetizers" class="btn btn-light">سندويشات بطاطا + مقبلات</a>
-        <a href="#chickenShawarmaMeals" class="btn btn-light">وجبات شاورما دجاج</a>
-        <a href="#meatShawarmaMeals" class="btn btn-light">وجبات شاورما لحمة</a>
-        <a href="#drink" class="btn btn-light">مشروبات</a>
-        <a href="#mealOffer" class="btn btn-light">عروض الوجبات</a>
-        <a href="#crispy" class="btn btn-light">كرسبي</a>
-        <a href="#broasted" class="btn btn-light">بروستد</a>
+  <body>
+    <header class="contianer mb-5">
+      <div class="overlay"></div>
+      <div
+        class="text-center py-4 logo position-relative d-flex justify-content-center align-items-center h-100"
+      >
+        <a class="navbar-brand" href="#">
+          <img class="" src="img/logo.png" alt="logo" />
+        </a>
       </div>
-  </section>
+    </header>
+    <h1 class="h1 text-center pt-5 pb-4">قائمة الاسعار</h1>
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 row row-cols-md-5">
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#snack">سناكات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#mealSnacks"
+                >سناكات وجبات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#boxSnacks"
+                >سناكات بوكس</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light"
+                href="#potatoSandwichesAppetizers"
+                >سندويشات بطاطا + مقبلات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#chickenShawarmaMeals"
+                >وجبات شاورما دجاج</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#meatShawarmaMeals"
+                >وجبات شاورما لحمة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#drink">مشروبات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#mealOffer"
+                >عروض الوجبات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#crispy">كرسبي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light" href="#broasted">بروستد</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- سناكات -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="snack">سناكات</h2>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش زنجر حار فرنسي او شراك</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">ساندوش تندر عادي فرنسي او شراك</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-         <div class="item row">
-          <p class="title-name col-9">ساندوش كورن بلو فرنسي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">ساندوش كورن بلو سبايسي فرنسي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row">
-            <p class="title-name col-9">ساندوش فاهيتا دجاج فرنسي</p>
-            <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش دجاج فطر وكريمة فرنسي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش تشكن باربكيو فرنسي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش سكالوب دجاج</p>
-          <p class="price d-flex justify-content-end col-3">1.45</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش تشكن جريل</p>
-          <p class="price d-flex justify-content-end col-3">2.25</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش برغر لحمة 100غرام كلاسك + علبة صوص</p>
-          <p class="price d-flex justify-content-end col-3">1.45</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش برغر درب لحمة 150غرام + علبة صوص</p>
-          <p class="price d-flex justify-content-end col-3">3.00</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش هوت دوغ</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش ستيك لحمة</p>
-          <p class="price d-flex justify-content-end col-3">2.00</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش روست تيركي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row ">
-          <p class="title-name col-9 ">ساندوش بسكليت</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش تشكن مكسيكي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش تشكن سوبريم</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش زندر بالكريمة</p>
-          <p class="price d-flex justify-content-end col-3">2.00</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش مايتي زنجر</p>
-          <p class="price d-flex justify-content-end col-3">3.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">ساندوش برغر أنجس 200غرام بالهوت دوغ</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">ساندوش برغر تكساس 200غرام</p>
-          <p class="price d-flex justify-content-end col-3">3.50</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">برغر كرسبي</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9 ">زنجر كريسبي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9 ">تندر كريسبي</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-  </section>
+    <!-- سناكات -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="snack">
+        سناكات
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش زنجر حار فرنسي او شراك</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش تندر عادي فرنسي او شراك</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش كورن بلو فرنسي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش كورن بلو سبايسي فرنسي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش فاهيتا دجاج فرنسي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش دجاج فطر وكريمة فرنسي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش تشكن باربكيو فرنسي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش سكالوب دجاج</p>
+        <p class="price d-flex justify-content-end col-3">1.45</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش تشكن جريل</p>
+        <p class="price d-flex justify-content-end col-3">2.25</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">
+          ساندوش برغر لحمة 100غرام كلاسك + علبة صوص
+        </p>
+        <p class="price d-flex justify-content-end col-3">1.45</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش برغر درب لحمة 150غرام + علبة صوص</p>
+        <p class="price d-flex justify-content-end col-3">3.00</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش هوت دوغ</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش ستيك لحمة</p>
+        <p class="price d-flex justify-content-end col-3">2.00</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش روست تيركي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش بسكليت</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش تشكن مكسيكي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش تشكن سوبريم</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش زندر بالكريمة</p>
+        <p class="price d-flex justify-content-end col-3">2.00</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش مايتي زنجر</p>
+        <p class="price d-flex justify-content-end col-3">3.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش برغر أنجس 200غرام بالهوت دوغ</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش برغر تكساس 200غرام</p>
+        <p class="price d-flex justify-content-end col-3">3.50</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">برغر كرسبي</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">زنجر كريسبي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">تندر كريسبي</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+    </section>
 
-  <!-- وجبات سناكات -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="mealSnacks">سناكات الوجبات</h2>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تشكن مكسيكي</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي250مل + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة زنجر بتمون علينا</p>
-          <p class="price d-flex justify-content-end col-3">4.75</p>
-        </div>
-        <p class="text-success">وزن 250غرام + علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة زنجر</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تندر</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة كوردن بلو</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة كوردن بلو سبايسي</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة فاهيتا دجاج</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة دجاج فطر وكريمة</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تشكن باربكيو</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة سكالوب دجاج</p>
-          <p class="price d-flex justify-content-end col-3">2.50</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تشكن جريل</p>
-          <p class="price d-flex justify-content-end col-3">3.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر لحمة 100غرام كلاسك</p>
-          <p class="price d-flex justify-content-end col-3">2.50</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر درب لحمة 150غرام</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة ستيك لحمة بتمون علينا</p>
-          <p class="price d-flex justify-content-end col-3">6.00</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر العملاق لحمة 300غرام</p>
-          <p class="price d-flex justify-content-end col-3">5.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة هوت دوغ</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة ستيك لحمة</p>
-          <p class="price d-flex justify-content-end col-3">3.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة زنجر بالكريمة</p>
-          <p class="price d-flex justify-content-end col-3">3.25</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة مايتي زنجر</p>
-          <p class="price d-flex justify-content-end col-3">5.25</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر أنجس 200غرام بالهوت دوغ</p>
-          <p class="price d-flex justify-content-end col-3">6.00</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة بسكليت</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تشكن سوبريم</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تشكن سوبريم</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر كريسبي</p>
-          <p class="price d-flex justify-content-end col-3">2.50</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة زنجر كريسبي</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة تندر كريسبي</p>
-          <p class="price d-flex justify-content-end col-3">2.75</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة ستيك سوبريم لحمة</p>
-          <p class="price d-flex justify-content-end col-3">5.00</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة برغر تكساس 200غرام</p>
-          <p class="price d-flex justify-content-end col-3">5.00</p>
-        </div>
-        <p class="text-success">علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف</p>
+    <!-- وجبات سناكات -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="mealSnacks">
+        سناكات الوجبات
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تشكن مكسيكي</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">علبة ببسي250مل + علبة بطاطا + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة زنجر بتمون علينا</p>
+        <p class="price d-flex justify-content-end col-3">4.75</p>
+      </div>
+      <p class="text-success">
+        وزن 250غرام + علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة
+        ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة زنجر</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تندر</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة كوردن بلو</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة كوردن بلو سبايسي</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة فاهيتا دجاج</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة دجاج فطر وكريمة</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تشكن باربكيو</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة سكالوب دجاج</p>
+        <p class="price d-flex justify-content-end col-3">2.50</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تشكن جريل</p>
+        <p class="price d-flex justify-content-end col-3">3.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر لحمة 100غرام كلاسك</p>
+        <p class="price d-flex justify-content-end col-3">2.50</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر درب لحمة 150غرام</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة ستيك لحمة بتمون علينا</p>
+        <p class="price d-flex justify-content-end col-3">6.00</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر العملاق لحمة 300غرام</p>
+        <p class="price d-flex justify-content-end col-3">5.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة هوت دوغ</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة ستيك لحمة</p>
+        <p class="price d-flex justify-content-end col-3">3.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة زنجر بالكريمة</p>
+        <p class="price d-flex justify-content-end col-3">3.25</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة مايتي زنجر</p>
+        <p class="price d-flex justify-content-end col-3">5.25</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر أنجس 200غرام بالهوت دوغ</p>
+        <p class="price d-flex justify-content-end col-3">6.00</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة بسكليت</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تشكن سوبريم</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تشكن سوبريم</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر كريسبي</p>
+        <p class="price d-flex justify-content-end col-3">2.50</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة زنجر كريسبي</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة تندر كريسبي</p>
+        <p class="price d-flex justify-content-end col-3">2.75</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة ستيك سوبريم لحمة</p>
+        <p class="price d-flex justify-content-end col-3">5.00</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة برغر تكساس 200غرام</p>
+        <p class="price d-flex justify-content-end col-3">5.00</p>
+      </div>
+      <p class="text-success">
+        علبة ببسي 250مل + علبة مثومه + علبة بطاطا + علبة سلطة ملفوف
+      </p>
+    </section>
 
-  </section>
+    <!-- سناكات بوكس -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="boxSnacks">
+        سناكات بوكس
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">بوكس تشيكن بونلس مكس</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">بوكس تشيكن بفلو</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">بوكس تشيكن دينامت</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">بوكس تشيكن باربيكو</p>
+        <p class="price d-flex justify-content-end col-3">4.25</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">بوكس تشيكن مكس تشيز</p>
+        <p class="price d-flex justify-content-end col-3">3.00</p>
+      </div>
+    </section>
 
-  <!-- سناكات بوكس -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="boxSnacks">سناكات بوكس</h2>
-        <div class="item row">
-          <p class="title-name col-9">بوكس تشيكن بونلس مكس</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">بوكس تشيكن بفلو</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">بوكس تشيكن دينامت</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">بوكس تشيكن باربيكو</p>
-          <p class="price d-flex justify-content-end col-3">4.25</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">بوكس تشيكن مكس تشيز</p>
-          <p class="price d-flex justify-content-end col-3">3.00</p>
-        </div>
-  </section>
+    <!-- سندويشات بطاطا + مقبلات -->
+    <section class="container my-5">
+      <h2
+        class="h2 title-list py-2 px-4 mb-4 text-center"
+        id="potatoSandwichesAppetizers"
+      >
+        سندويشات بطاطا + مقبلات
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">علبة بطاطا صغيرة</p>
+        <p class="price d-flex justify-content-end col-3">0.75</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">علبة بطاطا كبير</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش شراك بطاطا صغير</p>
+        <p class="price d-flex justify-content-end col-3">0.50</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ساندوش شراك بطاطا كبير</p>
+        <p class="price d-flex justify-content-end col-3">1.00</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">سندوش فرنسي بطاطا كبير</p>
+        <p class="price d-flex justify-content-end col-3">0.25</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">علبة (مايونيز او جبنة سائل او صوص)</p>
+        <p class="price d-flex justify-content-end col-3">0.25</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">اضافة جبنة على سندوش + الوجبة</p>
+        <p class="price d-flex justify-content-end col-3">0.25</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">علبة بطاطا مولتو كبير</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">علبة بطاطا كيرلي</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">علبة بطاطا ودجز</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">علبة صوص حار</p>
+        <p class="price d-flex justify-content-end col-3">1.00</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">علبة سلطة كولسلو</p>
+        <p class="price d-flex justify-content-end col-3">1.00</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">علبة مثومه</p>
+        <p class="price d-flex justify-content-end col-3">1.00</p>
+      </div>
+    </section>
+    <!-- وجبات شاورما دجاج -->
+    <section class="container my-5">
+      <h2
+        class="h2 title-list py-2 px-4 mb-4 text-center"
+        id="chickenShawarmaMeals"
+      >
+        وجبات شاورما دجاج
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش شاورما دجاج صغير</p>
+        <p class="price d-flex justify-content-end col-3">0.75</p>
+      </div>
+      <p class="text-success">علبة مثومه</p>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش شاورما دجاج كبير</p>
+        <p class="price d-flex justify-content-end col-3">1.25</p>
+      </div>
+      <p class="text-success">علبة مثومه</p>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش شاورما إيطالي بتمون علينا</p>
+        <p class="price d-flex justify-content-end col-3">1.75</p>
+      </div>
+      <p class="text-success">ساندوش شاورما إيطالي بتمون علينا</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج عادي</p>
+        <p class="price d-flex justify-content-end col-3">2.25</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج سوبر</p>
+        <p class="price d-flex justify-content-end col-3">3.00</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج دبل</p>
+        <p class="price d-flex justify-content-end col-3">3.50</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج تربل</p>
+        <p class="price d-flex justify-content-end col-3">4.50</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج إيطالي بتمون علينا</p>
+        <p class="price d-flex justify-content-end col-3">3.50</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما دجاج حلبي</p>
+        <p class="price d-flex justify-content-end col-3">3.50</p>
+      </div>
+      <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة دبل مكس</p>
+        <p class="price d-flex justify-content-end col-3">3.50</p>
+      </div>
+      <p class="text-success">
+        (دجاج + لحمة) + علبة بطاطا + علبة مثومه + علبة سلطة ملفوف
+      </p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شرحات دجاج</p>
+        <p class="price d-flex justify-content-end col-3">12.00</p>
+      </div>
+      <p class="text-success">1 كيلو</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما شرحات دجاج</p>
+        <p class="price d-flex justify-content-end col-3">3.00</p>
+      </div>
+      <p class="text-success">250 غ</p>
+    </section>
+    <!-- وجبات شاورما لحمة -->
+    <section class="container my-5">
+      <h2
+        class="h2 title-list py-2 px-4 mb-4 text-center"
+        id="meatShawarmaMeals"
+      >
+        وجبات شاورما لحمة
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">ساندوش شاورما لحمة سوبر</p>
+        <p class="price d-flex justify-content-end col-3">1.50</p>
+      </div>
+      <p class="text-success">علبة طحينية</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما لحمة عادي</p>
+        <p class="price d-flex justify-content-end col-3">2.60</p>
+      </div>
+      <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما لحمة سوبر</p>
+        <p class="price d-flex justify-content-end col-3">3.30</p>
+      </div>
+      <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما لحمة دبل</p>
+        <p class="price d-flex justify-content-end col-3">3.80</p>
+      </div>
+      <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
+      <div class="item row">
+        <p class="title-name col-9">وجبة شاورما لحمة تربل</p>
+        <p class="price d-flex justify-content-end col-3">5.00</p>
+      </div>
+      <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
+    </section>
 
-  <!-- سندويشات بطاطا + مقبلات -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="potatoSandwichesAppetizers">سندويشات بطاطا + مقبلات</h2>
-        <div class="item row">
-          <p class="title-name col-9">علبة بطاطا صغيرة</p>
-          <p class="price d-flex justify-content-end col-3">0.75</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">علبة بطاطا كبير</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش شراك بطاطا صغير</p>
-          <p class="price d-flex justify-content-end col-3">0.50</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">ساندوش شراك بطاطا كبير</p>
-          <p class="price d-flex justify-content-end col-3">1.00</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">سندوش فرنسي بطاطا كبير</p>
-          <p class="price d-flex justify-content-end col-3">0.25</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">علبة (مايونيز او جبنة سائل او صوص)</p>
-          <p class="price d-flex justify-content-end col-3">0.25</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">اضافة جبنة على سندوش + الوجبة</p>
-          <p class="price d-flex justify-content-end col-3">0.25</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">علبة بطاطا مولتو كبير</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">علبة بطاطا كيرلي</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">علبة بطاطا ودجز</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">علبة صوص حار</p>
-          <p class="price d-flex justify-content-end col-3">1.00</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">علبة سلطة كولسلو</p>
-          <p class="price d-flex justify-content-end col-3">1.00</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">علبة مثومه</p>
-          <p class="price d-flex justify-content-end col-3">1.00</p>
-        </div>
-  </section>
-  <!-- وجبات شاورما دجاج -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="chickenShawarmaMeals">وجبات شاورما دجاج</h2>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش شاورما دجاج صغير</p>
-          <p class="price d-flex justify-content-end col-3">0.75</p>
-        </div>
-        <p class="text-success">علبة مثومه</p>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش شاورما دجاج كبير</p>
-          <p class="price d-flex justify-content-end col-3">1.25</p>
-        </div>
-        <p class="text-success">علبة مثومه</p>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش شاورما إيطالي بتمون علينا</p>
-          <p class="price d-flex justify-content-end col-3">1.75</p>
-        </div>
-        <p class="text-success">ساندوش شاورما إيطالي بتمون علينا</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج عادي</p>
-          <p class="price d-flex justify-content-end col-3">2.25</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج سوبر</p>
-          <p class="price d-flex justify-content-end col-3">3.00</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج دبل</p>
-          <p class="price d-flex justify-content-end col-3">3.50</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج تربل</p>
-          <p class="price d-flex justify-content-end col-3">4.50</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج إيطالي بتمون علينا</p>
-          <p class="price d-flex justify-content-end col-3">3.50</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما دجاج حلبي</p>
-          <p class="price d-flex justify-content-end col-3">3.50</p>
-        </div>
-        <p class="text-success">علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة دبل مكس</p>
-          <p class="price d-flex justify-content-end col-3">3.50</p>
-        </div>
-        <p class="text-success"> (دجاج + لحمة) + علبة بطاطا + علبة مثومه + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شرحات دجاج</p>
-          <p class="price d-flex justify-content-end col-3">12.00</p>
-        </div>
-        <p class="text-success">1 كيلو</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما شرحات دجاج</p>
-          <p class="price d-flex justify-content-end col-3">3.00</p>
-        </div>
-        <p class="text-success">250 غ</p>
-  </section>
-  <!-- وجبات شاورما لحمة -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="meatShawarmaMeals">وجبات شاورما لحمة</h2>
-        <div class="item row">
-          <p class="title-name col-9">ساندوش شاورما لحمة سوبر</p>
-          <p class="price d-flex justify-content-end col-3">1.50</p>
-        </div>
-        <p class="text-success">علبة طحينية</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما لحمة عادي</p>
-          <p class="price d-flex justify-content-end col-3">2.60</p>
-        </div>
-        <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما لحمة سوبر</p>
-          <p class="price d-flex justify-content-end col-3">3.30</p>
-        </div>
-        <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما لحمة دبل</p>
-          <p class="price d-flex justify-content-end col-3">3.80</p>
-        </div>
-        <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
-        <div class="item row">
-          <p class="title-name col-9">وجبة شاورما لحمة تربل</p>
-          <p class="price d-flex justify-content-end col-3">5.00</p>
-        </div>
-        <p class="text-success">علبة طحينية + علبة بطاطا + علبة سلطة ملفوف</p>
-  </section>
-
-  <!-- مشروبات -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="drink">مشروبات</h2>
-        <div class="item row">
-          <p class="title-name col-9">ببسي 250مل</p>
-          <p class="price d-flex justify-content-end col-3">0.30</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">ببسي 330مل</p>
-          <p class="price d-flex justify-content-end col-3">0.35</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">ببسي 1لتر</p>
-          <p class="price d-flex justify-content-end col-3">0.60</p>
-        </div>
-        <div class="item row bg-white">
-          <p class="title-name col-9">ببسي 2لتر</p>
-          <p class="price d-flex justify-content-end col-3">1.00</p>
-        </div>
-        <div class="item row">
-          <p class="title-name col-9">عصير مستر جوسي</p>
-          <p class="price d-flex justify-content-end col-3">0.15</p>
-        </div>
-  </section>
-  <!-- عروض الوجبات -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="mealOffer">عروض الوجبات</h2>
+    <!-- مشروبات -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="drink">
+        مشروبات
+      </h2>
+      <div class="item row">
+        <p class="title-name col-9">ببسي 250مل</p>
+        <p class="price d-flex justify-content-end col-3">0.30</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ببسي 330مل</p>
+        <p class="price d-flex justify-content-end col-3">0.35</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">ببسي 1لتر</p>
+        <p class="price d-flex justify-content-end col-3">0.60</p>
+      </div>
+      <div class="item row bg-white">
+        <p class="title-name col-9">ببسي 2لتر</p>
+        <p class="price d-flex justify-content-end col-3">1.00</p>
+      </div>
+      <div class="item row">
+        <p class="title-name col-9">عصير مستر جوسي</p>
+        <p class="price d-flex justify-content-end col-3">0.15</p>
+      </div>
+    </section>
+    <!-- عروض الوجبات -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="mealOffer">
+        عروض الوجبات
+      </h2>
       <div class="item row">
         <p class="title-name col-9">وجبة مكس عائلي</p>
         <p class="price d-flex justify-content-end col-3">17.00</p>
       </div>
-        <p class="text-success">3 ساندوش فاهيتا دجاج / 3 ساندوش شاورما لحمة سوبر / 3 ساندوش شاورما دجاج سوبر / 4 علب بطاطا / علبة ببسي 2لتر</p>
+      <p class="text-success">
+        3 ساندوش فاهيتا دجاج / 3 ساندوش شاورما لحمة سوبر / 3 ساندوش شاورما دجاج
+        سوبر / 4 علب بطاطا / علبة ببسي 2لتر
+      </p>
       <div class="item row">
         <p class="title-name col-9">وجبة مكس شبابي</p>
         <p class="price d-flex justify-content-end col-3">11.50</p>
       </div>
-        <p class="text-success">3 ساندوش شاورما لحمة سوبر / 3 ساندوش شاورما دجاج سوبر / 3 علب بطاطا / 2 علب ببسي 1لتر</p>
+      <p class="text-success">
+        3 ساندوش شاورما لحمة سوبر / 3 ساندوش شاورما دجاج سوبر / 3 علب بطاطا / 2
+        علب ببسي 1لتر
+      </p>
       <div class="item row">
         <p class="title-name col-9">وجبة لمة الاصدقاء</p>
         <p class="price d-flex justify-content-end col-3">11.50</p>
       </div>
-        <p class="text-success">ساندوش زنجر حار فرنسي / ساندوش فاهيتا دجاج فرنسي / ساندوش تشكن باربكيو فرنسي / ساندوش برغر لحمة 100غرام كلاسك / 2 علبة بطاطا / علبة ببسي 1لتر/<p>
+      <p class="text-success">
+        ساندوش زنجر حار فرنسي / ساندوش فاهيتا دجاج فرنسي / ساندوش تشكن باربكيو
+        فرنسي / ساندوش برغر لحمة 100غرام كلاسك / 2 علبة بطاطا / علبة ببسي 1لتر/
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة افتح واختار</p>
         <p class="price d-flex justify-content-end col-3">16.00</p>
       </div>
-        <p class="text-success">ساندوش تشكن جريل / ساندوش برغر درب لحمة 150غرام / ساندوش هوت دوغ / ساندوش شاورما دجاج كبير / ساندوش شاورما لحمة سوبر / 2 وجبة شاورما إيطالي / 3 علب بطاطا / ببسي 1لتر<p>
+      <p class="text-success">
+        ساندوش تشكن جريل / ساندوش برغر درب لحمة 150غرام / ساندوش هوت دوغ /
+        ساندوش شاورما دجاج كبير / ساندوش شاورما لحمة سوبر / 2 وجبة شاورما إيطالي
+        / 3 علب بطاطا / ببسي 1لتر
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة بتمون علينا</p>
         <p class="price d-flex justify-content-end col-3">24.00</p>
       </div>
-        <p class="text-success">ساندوش دجاج فطر وكريمة فرنسي / ساندوش سكالوب دجاج / ساندوش كوردن بلو فرنسي / ساندوش تشكن سوبريم / ساندوش تشكن مكسيكي / 3 ساندوش شاورما دجاج إيطالي / ببسي 2لتر / 4 علب بطاطا <p>
+      <p class="text-success">
+        ساندوش دجاج فطر وكريمة فرنسي / ساندوش سكالوب دجاج / ساندوش كوردن بلو
+        فرنسي / ساندوش تشكن سوبريم / ساندوش تشكن مكسيكي / 3 ساندوش شاورما دجاج
+        إيطالي / ببسي 2لتر / 4 علب بطاطا
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة شاورما دجاج عائلية شباب</p>
         <p class="price d-flex justify-content-end col-3">7.00</p>
       </div>
-        <p class="text-success">4 ساندوش سوبر / 2 علبة بطاطا / 2 علبة مثومه / 2 علبة سلطة ملفوف / 1لتر ببسي<p>
+      <p class="text-success">
+        4 ساندوش سوبر / 2 علبة بطاطا / 2 علبة مثومه / 2 علبة سلطة ملفوف / 1لتر
+        ببسي
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة شاورما دجاج عائلية توفير</p>
         <p class="price d-flex justify-content-end col-3">10.00</p>
       </div>
-        <p class="text-success">7 ساندوش سوبر / 3 علبة بطاطا / 3 علبة مثومه / 3 علبة سلطة ملفوف / 2لتر ببسي<p>
+      <p class="text-success">
+        7 ساندوش سوبر / 3 علبة بطاطا / 3 علبة مثومه / 3 علبة سلطة ملفوف / 2لتر
+        ببسي
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة شاورما دجاج عائلة فاملي</p>
         <p class="price d-flex justify-content-end col-3">15.00</p>
       </div>
-        <p class="text-success">10 ساندوش سوبر / 5 علبة بطاطا / 5 علبة مثومه / 5 علبة سلطة ملفوف / 2لتر ببسي<p>
+      <p class="text-success">
+        10 ساندوش سوبر / 5 علبة بطاطا / 5 علبة مثومه / 5 علبة سلطة ملفوف / 2لتر
+        ببسي
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة شاورما لحمة عائلة توفير</p>
         <p class="price d-flex justify-content-end col-3">10.50</p>
       </div>
-        <p class="text-success">5 ساندوش سوبر / 3 علبة بطاطا / 3 علبة طحينية / 3 علبة سلطة ملفوف / 2لتر ببسي<p>
+      <p class="text-success">
+        5 ساندوش سوبر / 3 علبة بطاطا / 3 علبة طحينية / 3 علبة سلطة ملفوف / 2لتر
+        ببسي
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">وجبة شاورما لحمة دبل تيربو</p>
         <p class="price d-flex justify-content-end col-3">16.00</p>
       </div>
-        <p class="text-success">8 ساندوش سوبر / 4 علبة بطاطا / 4 علبة طحينية / 4 علبة سلطة ملفوف / 2لتر ببسي<p>
-  </section>
-  <!-- عروض قرمشة -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="crispy">قرمشة</h2>
+      <p class="text-success">
+        8 ساندوش سوبر / 4 علبة بطاطا / 4 علبة طحينية / 4 علبة سلطة ملفوف / 2لتر
+        ببسي
+      </p>
+      <p></p>
+    </section>
+
+    <!-- عروض قرمشة -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="crispy">
+        قرمشة
+      </h2>
       <div class="item row">
         <p class="title-name col-9">كرسبي 4 قطع</p>
         <p class="price d-flex justify-content-end col-3">3.00</p>
       </div>
-        <p class="text-success">ببسي 250مل + بطاطا + كولسلو + مثومه + صوص حار<p>
+      <p class="text-success">ببسي 250مل + بطاطا + كولسلو + مثومه + صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">كرسبي 8 قطع</p>
         <p class="price d-flex justify-content-end col-3">6.00</p>
       </div>
-        <p class="text-success">ببسي 250مل + بطاطا + كولسلو + مثومه + صوص حار<p>
+      <p class="text-success">ببسي 250مل + بطاطا + كولسلو + مثومه + صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">كرسبي 12 قطعة</p>
         <p class="price d-flex justify-content-end col-3">9.00</p>
       </div>
-        <p class="text-success">ببسي 1لتر + بطاطا + كولسلو + مثومه + صوص حار<p>
+      <p class="text-success">ببسي 1لتر + بطاطا + كولسلو + مثومه + صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">كرسبي 16 قطعة</p>
         <p class="price d-flex justify-content-end col-3">12.00</p>
       </div>
-        <p class="text-success">ببسي 1لتر + بطاطا + كولسلو + مثومه + صوص حار<p>
-  </section>
-  <!-- بروستد -->
-  <section class="container my-5 ">
-    <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="broasted">بروستد</h2>
+      <p class="text-success">ببسي 1لتر + بطاطا + كولسلو + مثومه + صوص حار</p>
+      <p></p>
+    </section>
+
+    <!-- بروستد -->
+    <section class="container my-5">
+      <h2 class="h2 title-list py-2 px-4 mb-4 text-center" id="broasted">
+        بروستد
+      </h2>
       <div class="item row">
         <p class="title-name col-9">بروستد 4 قطع</p>
         <p class="price d-flex justify-content-end col-3">3.50</p>
       </div>
-        <p class="text-success">بطاطا + كولسلو + مثومه + صوص حار<p>
+      <p class="text-success">بطاطا + كولسلو + مثومه + صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">بروستد 8 قطع</p>
         <p class="price d-flex justify-content-end col-3">7.00</p>
       </div>
-        <p class="text-success">2 بطاطا + 3 كولسلو + 3 مثومه + 3 صوص حار<p>
+      <p class="text-success">2 بطاطا + 3 كولسلو + 3 مثومه + 3 صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">بروستد 12 قطع</p>
         <p class="price d-flex justify-content-end col-3">10.50</p>
       </div>
-        <p class="text-success">3 بطاطا + 4 كولسلو + 4 مثومه + 4 صوص حار<p>
+      <p class="text-success">3 بطاطا + 4 كولسلو + 4 مثومه + 4 صوص حار</p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">بروستد 16 قطع</p>
         <p class="price d-flex justify-content-end col-3">14.00</p>
       </div>
-        <p class="text-success"> ببسي 1لتر + 5 بطاطا + 6 كولسلو + 6 مثومه + 6 صوص حار<p>
+      <p class="text-success">
+        ببسي 1لتر + 5 بطاطا + 6 كولسلو + 6 مثومه + 6 صوص حار
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">بروستد 24 قطع</p>
         <p class="price d-flex justify-content-end col-3">21.00</p>
       </div>
-        <p class="text-success"> ببسي 2لتر + 6 بطاطا + 7 كولسلو + 7 مثومه + 7 صوص حار<p>
+      <p class="text-success">
+        ببسي 2لتر + 6 بطاطا + 7 كولسلو + 7 مثومه + 7 صوص حار
+      </p>
+      <p></p>
       <div class="item row">
         <p class="title-name col-9">بروستد 32 قطع</p>
         <p class="price d-flex justify-content-end col-3">28.00</p>
       </div>
-        <p class="text-success"> ببسي 2لتر + 7 بطاطا + 8 كولسلو + 8 مثومه + 8 صوص حار<p>
-  </section>
-  <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+      <p class="text-success">
+        ببسي 2لتر + 7 بطاطا + 8 كولسلو + 8 مثومه + 8 صوص حار
+      </p>
+      <p></p>
+    </section>
+
+    <!-- Copyright-->
+    <section class="container-fluid mt-5 bg-dark text-center">
+      <p class="py-4 mb-0 text-white">
+        Copyright © 2023 Shawarma Betmon We All right reserved
+      </p>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
